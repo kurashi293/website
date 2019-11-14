@@ -2,7 +2,6 @@
   padding-top: 68px;
   a {
     text-decoration: none;
-    color: #1ca9e3;
   }
   .section__intro{
     letter-spacing: 3px;
@@ -103,17 +102,17 @@
       .work {
         display: block;
         flex-basis: 31%;
-        margin-bottom: 13%;
+        margin-bottom: 11%;
         img{
-          height: 350px;
+          height: 400px;
           width: 350px;
         }
         &__caption {
           text-align: center;
           &--title {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-            margin-top: 8px;
+            margin-top: 10px;
           }
           &--info {
             font-size: 15px;
@@ -130,7 +129,7 @@
 
 
 //ABOUT
-#white{
+#about{
   background: #FFF;
 }
 .section__content{
@@ -242,6 +241,9 @@
 
 
 //CONTACT
+#contact{
+  background: #FFF;
+}
 .contact-list{
   margin-top: 5%;
   ul {
@@ -287,4 +289,42 @@
   cursor: pointer;
   text-align: center;
   background-color: #ccc;
+}
+
+
+
+//グローバルナビのアンダーライン
+a::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+a:hover::after {
+  bottom: -1px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+//タイトルのフェード
+.fade_in_up{
+  animation:fadeInUp 2s linear;
+}
+@keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  transform: translateY(60px);
+  }
+  100% {
+  opacity: 1;
+  transform: translateY(0);
+  }
 }

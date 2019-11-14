@@ -2,22 +2,23 @@
   %nav.gnav.fixed
     %ul
       %li
-        = link_to "WORKS"
+        = link_to "WORKS", "#works"
       %li
-        = link_to "ABOUT"
+        = link_to "ABOUT", "#about"
       %li
-        = link_to "SKILL"
+        = link_to "SKILL", "#skill"
       %li
-        = link_to "CONTACT"
+        = link_to "CONTACT", "#contact"
   %header.header
     .inner
-      %h1.logo
+      %h1.logo{id: "title"}
         .logo__title RYO KURASHIMA
         .logo__desc PORTFOLIO
   %main.contents
+    //ポートフォリオ一覧
     %section.works
       .inner
-        .section
+        .section{id: "works"}
           %h2.section__title WORKS
           .section__intro
             .section__intro-text
@@ -49,9 +50,10 @@
               .work__caption
                 .work__caption--title mercari clone site
                 .work__caption--info Design / Coding
+    //自己紹介
     %section.about
       .inner
-        .section{id: "white"}
+        .section{id: "about"}
           %h2.section__title ABOUT
           .section__intro
             はじめまして！ RYOと申します。
@@ -63,10 +65,12 @@
               %br
               新潟出身の27歳独身。路地裏散策と飲食店巡りが趣味。
               %br
+              %br
               未経験の駆け出しエンジニアですが、設計・開発・インフラ構築・運用を一貫して熟知しているフルスタックエンジニアを目指して日々奮闘中。
+    //習得しているスキル一覧
     %section.skills
       .inner
-        .section
+        .section{id: "skill"}
           %h2.section__title SKILL
           .section__intro
             未経験ですが頑張ります！
@@ -107,9 +111,10 @@
                   .rate.rate1
                 .skill__caption--text
                   現状あまり理解は及んでいません・・・
+    //サイト管理者へのコンタクト
     %section.contact
       .inner
-        .section{id: "white"}
+        .section{id: "contact"}
           %h2.section__title CONTACT
           .section__intro
             お問い合わせは、SNSかメールでお願い致します。
@@ -125,7 +130,7 @@
               .contact-list__email ryoukurashima@gmail.com
       %footer.footer
         .pageTop
-          .js-pageTop
+          .js-pageTop{id: "btn"}
             Page Top
         .inner
           .copyright
