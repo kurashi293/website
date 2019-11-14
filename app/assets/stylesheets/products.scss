@@ -1,3 +1,290 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+  padding-top: 68px;
+  a {
+    text-decoration: none;
+    color: #1ca9e3;
+  }
+  .section__intro{
+    letter-spacing: 3px;
+  }
+}
+
+
+//グローバルナビ
+.gnav {
+  background-color: #b0c4de;
+  -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+}
+
+.gnav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      font-family: "Open sans", sans-serif;
+      font-size: 17px;
+      padding: 0 25px;
+      letter-spacing: .05em;
+      a {
+        position: relative;
+        display: inline-block;
+        padding: 20px 0;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        color: #333;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+//ヘッダー
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 86vh;
+  .logo {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    &__title {
+      font-family: "Open sans", sans-serif;
+      font-size: 70px;
+      line-height: 1;
+      letter-spacing: .2em;
+    }
+    &__desc {
+      font-size: 30px;
+      margin-top: 5px;
+      text-align: center;
+      letter-spacing: .2em;
+    }
+  }
+}
+
+
+
+//WORKS
+.inner {
+  max-width: 100%;
+  margin: 0 auto;
+  .section{
+    background-color: #EEEEEE;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 5%;
+    &__title {
+      font-family: "Open sans", sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 15px;
+      letter-spacing: .05em;
+    }
+    &__gallery{
+      margin-top: 7%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .work {
+        display: block;
+        flex-basis: 31%;
+        margin-bottom: 13%;
+        img{
+          height: 350px;
+          width: 350px;
+        }
+        &__caption {
+          text-align: center;
+          &--title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 8px;
+          }
+          &--info {
+            font-size: 15px;
+          }
+          &--url {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//ABOUT
+#white{
+  background: #FFF;
+}
+.section__content{
+  display: flex;
+  justify-content: center;
+  &--image {
+    margin-right: 3%;
+  }
+  .about-icon {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 0 #d9d9d9;
+    }
+  &--text {
+    margin-left: 7%;
+    max-width: 600px;
+    text-align: left;
+    margin-top: 3%;
+    box-sizing: border-box;
+    display: block;
+    letter-spacing: 3px;
+  }
+}
+
+
+
+//skill
+
+.skill {
+  flex-basis: 30%;
+  margin-top: 7%;
+  display: inline-block;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  &__icon{
+    margin-right: 5%;
+  }
+  .skill-icon{
+    height: 60px;
+    width: 60px;
+  }
+  &__caption{
+    flex-basis: calc(100% - 60px - 30px);
+    &--title{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &--text{
+      box-sizing: border-box;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+.rate {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  letter-spacing: .3em;
+}
+
+.rate:before,
+.rate:after {
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 20px;
+  content: "★★★★★";
+}
+
+.rate:before {
+  color:white;
+}
+
+.rate:after {
+  overflow: hidden;
+  white-space: nowrap;
+  color: #f181b4;
+}
+
+.rate1:after {
+  width: 20px;
+}
+
+.rate2:after {
+  width: 40px;
+}
+
+.rate3:after {
+  width: 60px;
+}
+
+.rate4:after {
+  width: 80px;
+}
+
+.rate5:after {
+  width: 100px;
+}
+
+
+
+//CONTACT
+.contact-list{
+  margin-top: 5%;
+  ul {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0 auto;
+    li {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__email{
+    font-size: 17px;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
+
+
+//footer
+.footer {
+  background-color: #1d1d1d;
+  .inner {
+    padding: 30px;
+    .copyright {
+      font-size: 11px;
+      text-align: center;
+      color: #8c8c8c;
+    }
+  }
+}
+
+.js-pageTop {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ccc;
+}
