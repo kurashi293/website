@@ -2,13 +2,13 @@
   %nav.gnav.fixed
     %ul
       %li
-        = link_to "WORKS", "#works"
+        = link_to "WORKS", "#works", class: "link"
       %li
-        = link_to "ABOUT", "#about"
+        = link_to "ABOUT", "#about", class: "link"
       %li
-        = link_to "SKILL", "#skill"
+        = link_to "SKILL", "#skill", class: "link"
       %li
-        = link_to "CONTACT", "#contact"
+        = link_to "CONTACT", "#contact", class: "link"
   %header.header
     .inner
       %h1.logo{id: "title"}
@@ -73,7 +73,7 @@
         .section{id: "skill"}
           %h2.section__title SKILL
           .section__intro
-            未経験ですが頑張ります！
+            初学者ですが頑張ります！
           .section__content
             .skill
               .skill__icon
@@ -92,7 +92,7 @@
                 .rating
                   .rate.rate3
                 .skill__caption--text
-                  あまり複雑なコードは書けませんが、理解はそれなりに及びます。フレームワークはRuby on railsを使用。
+                  あまり複雑なコードは書けませんが、発展的な理解はそれなりに及びます。フレームワークはRuby on railsを使用。
             .skill
               .skill__icon
                 = image_tag "https://u-mbrella.design/wp-content/uploads/2019/06/javascript.png", class: "skill-icon"
@@ -101,7 +101,7 @@
                 .rating
                   .rate.rate2
                 .skill__caption--text
-                  開発での使用経験は有りますが、正直得意ではありません。ライブラリはJqueryを使用。
+                  開発での使用経験は有りますが、正直得意ではありません。基礎的な知識は備わっています。ライブラリはJqueryを使用。
             .skill
               .skill__icon
                 = image_tag "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png", class: "skill-icon"
@@ -110,7 +110,9 @@
                 .rating
                   .rate.rate1
                 .skill__caption--text
-                  現状あまり理解は及んでいません・・・
+                  デプロイまでは一通り使用経験が有ります。が、現状あまり理解は及んでいません・・・
+                  %br
+                  これから経験を積み、理解を深めていきたいスキルの一つです。
     //サイト管理者へのコンタクト
     %section.contact
       .inner

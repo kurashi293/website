@@ -294,7 +294,7 @@
 
 
 //グローバルナビのアンダーライン
-a::after {
+.link::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -306,7 +306,7 @@ a::after {
   visibility: hidden;
   transition: .3s;
 }
-a:hover::after {
+.link:hover::after {
   bottom: -1px;
   opacity: 1;
   visibility: visible;
