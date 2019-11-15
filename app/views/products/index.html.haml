@@ -1,0 +1,139 @@
+.wrapper
+  %nav.gnav.fixed
+    %ul
+      %li
+        = link_to "WORKS", "#works", class: "link"
+      %li
+        = link_to "ABOUT", "#about", class: "link"
+      %li
+        = link_to "SKILL", "#skill", class: "link"
+      %li
+        = link_to "CONTACT", "#contact", class: "link"
+  %header.header
+    .inner
+      %h1.logo{id: "title"}
+        .logo__title RYO KURASHIMA
+        .logo__desc PORTFOLIO
+  %main.contents
+    //ポートフォリオ一覧
+    %section.works
+      .inner
+        .section{id: "works"}
+          %h2.section__title WORKS
+          .section__intro
+            .section__intro-text
+              Web（デザインとコーディング）制作の記録です。
+              %br
+              練習用の架空サイトも含んでおります。
+          .section__gallery
+            .work
+              = link_to "" do
+                = image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-5/010.png"
+              .work__caption
+                .work__caption--title pictweet
+                .work__caption--info Design / Coding
+            .work
+              = link_to "" do
+                = image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails2-1/01.png"
+              .work__caption
+                .work__caption--title mooovi
+                .work__caption--info Design / Coding
+            .work
+              = link_to "" do
+                = image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums//cf4144e0a741ca2db5346f27ec1bf021.gif"
+              .work__caption
+                .work__caption--title chat-space
+                .work__caption--info Design / Coding
+            .work
+              = link_to "" do
+                = image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums//634c6786bfc4a13cb2a36585104c16ef.png"
+              .work__caption
+                .work__caption--title mercari clone site
+                .work__caption--info Design / Coding
+    //自己紹介
+    %section.about
+      .inner
+        .section{id: "about"}
+          %h2.section__title ABOUT
+          .section__intro
+            はじめまして！ RYOと申します。
+          .section__content
+            .section__content--image
+              = image_tag "https://cultofthepartyparrot.com/parrots/hd/slowparrot.gif", class: "about-icon"
+            .section__content--text
+              エンジニア養成スクールTECH EXPERTを卒業後、就職活動に専念している無職のニートです。
+              %br
+              新潟出身の27歳独身。路地裏散策と飲食店巡りが趣味。
+              %br
+              %br
+              未経験の駆け出しエンジニアですが、設計・開発・インフラ構築・運用を一貫して熟知しているフルスタックエンジニアを目指して日々奮闘中。
+    //習得しているスキル一覧
+    %section.skills
+      .inner
+        .section{id: "skill"}
+          %h2.section__title SKILL
+          .section__intro
+            初学者ですが頑張ります！
+          .section__content
+            .skill
+              .skill__icon
+                = image_tag "https://sho-portfolio.com/img/icon_html.png", class: "skill-icon"
+              .skill__caption
+                %h3.skill__caption--title HTML5/CSS3
+                .rating
+                  .rate.rate3
+                .skill__caption--text
+                  基本的なコーディングは問題ないと思います。HamlやSassでの開発経験有り。使用エディタはVisualStudioCode。
+            .skill
+              .skill__icon
+                = image_tag "https://rr.img.naver.jp/mig?src=http%3A%2F%2Frepo.openpandora.org%2Ffiles%2Fpnd%2Fruby_and_gems%2Fruby.png&twidth=1200&theight=1200&qlt=80&res_format=jpg&op=r", class: "skill-icon"
+              .skill__caption
+                %h3.skill__caption--title Ruby
+                .rating
+                  .rate.rate3
+                .skill__caption--text
+                  あまり複雑なコードは書けませんが、発展的な理解はそれなりに及びます。フレームワークはRuby on railsを使用。
+            .skill
+              .skill__icon
+                = image_tag "https://u-mbrella.design/wp-content/uploads/2019/06/javascript.png", class: "skill-icon"
+              .skill__caption
+                %h3.skill__caption--title Javascript
+                .rating
+                  .rate.rate2
+                .skill__caption--text
+                  開発での使用経験は有りますが、正直得意ではありません。基礎的な知識は備わっています。ライブラリはJqueryを使用。
+            .skill
+              .skill__icon
+                = image_tag "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png", class: "skill-icon"
+              .skill__caption
+                %h3.skill__caption--title AWS
+                .rating
+                  .rate.rate1
+                .skill__caption--text
+                  デプロイまでは一通り使用経験が有ります。が、現状あまり理解は及んでいません・・・
+                  %br
+                  これから経験を積み、理解を深めていきたいスキルの一つです。
+    //サイト管理者へのコンタクト
+    %section.contact
+      .inner
+        .section{id: "contact"}
+          %h2.section__title CONTACT
+          .section__intro
+            お問い合わせは、SNSかメールでお願い致します。
+          .section__content
+            .contact-list
+              %ul
+                %li
+                  = link_to "https://twitter.com/kurashi293", target: "_blank" do
+                    = image_tag "https://sho-portfolio.com/img/icon_tw.png", height: "60px", width: "60px"
+                %li
+                  = link_to "https://www.facebook.com/profile.php?id=100006548255614", target: "_blank" do
+                    = image_tag "https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png", height: "57px", width: "57px"
+              .contact-list__email ryoukurashima@gmail.com
+      %footer.footer
+        .pageTop
+          .js-pageTop{id: "btn"}
+            Page Top
+        .inner
+          .copyright
+            Copyright©RYO KURASHIMA. All Rights Reserved.
